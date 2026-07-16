@@ -1,5 +1,7 @@
 ---
-layout: home
+
+layout: splash
+permalink: /
 author_profile: true
 title: Dr. Richard Jerousek - astrophysicist, composer, artist, garbageman, teacher, etc.
 ---

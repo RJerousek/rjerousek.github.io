@@ -1,0 +1,18 @@
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Research"
+    url: /research/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "Art and Music"
+    url: /art_and_music/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Manifesto"
+    url: /manifesto/

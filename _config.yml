@@ -1,11 +1,34 @@
 title: "Richard Jerousek"
 name: "Richard Jerousek"
+description: "Dr. Richard Jerousek - astrophysicist, composer, artist, garbageman, teacher, etc."
 
 url: "https://richardjerousek.com"
 baseurl: ""
 
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+
+minimal_mistakes_skin: "default"
+
+author:
+  name: "Richard Jerousek"
+  bio: "Stuff and things"
+  location: "Orlando, Florida"
+  links:
+    - label: "University of Central Florida"
+      icon: "fas fa-fw fa-university"
+      url: "https://www.ucf.edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rjerousek"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
