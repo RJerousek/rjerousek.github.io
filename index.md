@@ -1,16 +1,11 @@
 ---
 layout: home
 author_profile: true
-title: Richard Jerousek
+title: Dr. Richard Jerousek - astrophysicist, composer, artist, garbageman, teacher, etc.
 ---
 
-Welcome to my personal website.
-
-Here you'll find information about my
-
 - Research
-- Publications
 - Teaching
-- Course Materials
-- Music
-- Art
+- Music and Art
+- Treasures
+- Manifesto
