@@ -1,16 +1,12 @@
 ---
 layout: home
-title: Home
-permalink: /
+author_profile: true
+title: Richard Jerousek
 ---
-
-# Richard Jerousek
-
-Planetary Scientist • Educator • Musician • Artist
 
 Welcome to my personal website.
 
-## Explore
+Here you'll find information about my
 
 - Research
 - Publications
@@ -18,8 +14,3 @@ Welcome to my personal website.
 - Course Materials
 - Music
 - Art
-- Curriculum Vitae
-
----
-
-This website is currently under construction.
