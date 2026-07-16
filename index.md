@@ -1,9 +1,25 @@
 ---
 layout: home
 title: Home
+permalink: /
 ---
 
 # Richard Jerousek
 
-Welcome to a website! I don't like labels but to give you an idea of what you might encounter here, I am an astrophysicist, teacher, artist, musician, and garbageman.
+Planetary Scientist • Educator • Musician • Artist
 
+Welcome to my personal website.
+
+## Explore
+
+- Research
+- Publications
+- Teaching
+- Course Materials
+- Music
+- Art
+- Curriculum Vitae
+
+---
+
+This website is currently under construction.
