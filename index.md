@@ -1,13 +1,13 @@
 ---
-
-layout: splash
-permalink: /
+layout: single
+title: "Richard Jerousek"
 author_profile: true
-title: Dr. Richard Jerousek - astrophysicist, composer, artist, garbageman, teacher, etc.
+permalink: /
 ---
 
-- Research
-- Teaching
-- Music and Art
-- Treasures
-- Manifesto
+# Welcome
+
+
+
+---
+

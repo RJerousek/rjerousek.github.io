@@ -1,11 +1,13 @@
 title: "Richard Jerousek"
 name: "Richard Jerousek"
-description: "Dr. Richard Jerousek - astrophysicist, composer, artist, garbageman, teacher, etc."
-
+description: "Personal website for Richard Jerousek"
 url: "https://richardjerousek.com"
 baseurl: ""
 
 remote_theme: "mmistakes/minimal-mistakes"
+
+include:
+  - _pages
 
 plugins:
   - jekyll-remote-theme
@@ -14,16 +16,24 @@ plugins:
 minimal_mistakes_skin: "default"
 
 author:
-  name: "Richard Jerousek"
-  bio: "Stuff and things"
-  location: "Orlando, Florida"
+  name: "Dr. Richard Jerousek"
+  avatar: "/assets/images/profile_pic.png"
+  bio: "astrophysicist, composer, artist, garbageman, teacher, etc."
+  location: "Null Island"
   links:
-    - label: "University of Central Florida"
-      icon: "fas fa-fw fa-university"
-      url: "https://www.ucf.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rjerousek"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/rjerousek"
+    - label: "University of Central Florida"
+      icon: "fas fa-fw fa-university"
+      url: "https://sciences.ucf.edu/physics/person/richard-jerousek/"
+    - label: "Robinson Observatory"
+      icon: "fas fa-fw fa-telescope"
+      url: "https://planets.ucf.edu/observatory"
+
 
 defaults:
   - scope:

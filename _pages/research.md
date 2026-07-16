@@ -1,11 +1,14 @@
 ---
 title: "Research"
 permalink: /research/
+author_profile: false
 ---
 
-# Academic Research
+## Topics
 
-Planetary rings, astrophysical disks, and solar system origins.
+- planetary rings
+- astrophysical disks
+- solar system origins.
 
 ## Teams:
 
