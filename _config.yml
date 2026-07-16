@@ -1,0 +1,20 @@
+remote_theme: "mmistakes/minimal-mistakes"
+
+minimal_mistakes_skin: "default"
+
+title: "Richard Jerousek"
+name: "Richard Jerousek"
+description: "Research, teaching, music, and art"
+
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+
+  music:
+    output: true
+    permalink: /music/:path/
+
+  art:
+    output: true
+    permalink: /art/:path/
