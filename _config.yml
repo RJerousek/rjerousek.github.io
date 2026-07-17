@@ -31,7 +31,7 @@ author:
       icon: "fas fa-fw fa-university"
       url: "https://sciences.ucf.edu/physics/person/richard-jerousek/"
     - label: "Robinson Observatory"
-      icon: "fas fa-fw fa-telescope"
+      icon: "fas fa-fw fa-satellite-dish"
       url: "https://planets.ucf.edu/observatory"
 
 

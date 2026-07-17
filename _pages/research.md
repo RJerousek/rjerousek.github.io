@@ -1,17 +1,17 @@
 ---
-title: "Research"
+title: "research"
 permalink: /research/
 author_profile: false
 ---
 
-## Topics
+## topics:
 
 - planetary rings
 - astrophysical disks
-- solar system origins.
+- solar system originsgit a
 
-## Teams:
+## teams:
 
-- Rings and Dynamics Group (University of Central Florida) - group leader
-- Robinson Observatory (University of Central Florida) - director
-- Cassini Ultraviolet Imaging Spectrograph (UVIS) - scientist 
+- rings and dynamics group (university of central florida) - group lead
+- robinson observatory (university of central florida) - director
+- cassini ultraviolet imaging spectrograph (uvis) - scientist 
