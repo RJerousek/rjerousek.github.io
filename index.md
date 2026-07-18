@@ -25,7 +25,7 @@ classes: wide
 
   <div class="home-bio__text">
 
-    <h1>{{ site.author.name }}</h1>
+    <h2>{{ site.author.name }}</h2>
 
     {% if site.author.bio %}
       <p class="home-bio__bio">
