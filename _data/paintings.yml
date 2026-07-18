@@ -1,0 +1,32 @@
+projects:
+  - title: "Paintings"
+    description: "Selected paintings and mixed-media work."
+
+    works:
+      - title: "untitled"
+        caption: "mixed-media and acrylic"
+        image: "/assets/images/paintings/dead_trans.jpg"
+
+      - title: "digits"
+        caption: "acrylic on garage sale print"
+        image: "/assets/images/paintings/fingers.jpg"
+
+      - title: "untitled"
+        caption: "mixed-media and acrylic"
+        image: "/assets/images/paintings/rivers_and_streams.jpg"
+
+      - title: "untitled"
+        caption: "acrylic on canvas"
+        image: "/assets/images/paintings/blocks.jpg"
+
+      - title: "winter birthdays"
+        caption: "mixed-media and acrylic"
+        image: "/assets/images/paintings/winter_birthday.jpg"
+
+      - title: "untitled"
+        caption: "bark and plywood"
+        image: "/assets/images/paintings/found_inside_a_tree.jpg"
+
+      - title: "untitled"
+        caption: "chicago tribune from 1984, mixed-media, acrylic "
+        image: "/assets/images/paintings/the_grinding_hum_of_humanity.jpg"

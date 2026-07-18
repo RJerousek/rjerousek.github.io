@@ -1,41 +1,463 @@
 ---
-# Only the main Sass file needs front matter
 ---
 
 @import "minimal-mistakes";
 
-/* Hero video */
-.hero-video {
+
+/* =========================================================
+   VIDEO HERO
+   ========================================================= */
+
+.video-hero {
   position: relative;
-  width: 100vw;
-  height: 70vh;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
+  height: min(70vh, 700px);
+  min-height: 420px;
   overflow: hidden;
+  background: #000;
 }
 
-.hero-video video {
+.video-hero__media {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  margin: 0;
   object-fit: cover;
 }
 
-.hero-text {
+.video-hero__shade {
   position: absolute;
   inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.video-hero__content {
+  position: relative;
+  z-index: 1;
   display: flex;
+  height: 100%;
+  padding: 2rem;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white;
+  justify-content: center;
   text-align: center;
-  text-shadow: 0 0 15px black;
-  z-index: 10;
+  color: #fff;
 }
 
-.hero-text h1 {
-  font-size: 4rem;
+.video-hero__content h1 {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.05;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
 }
 
-.hero-text p {
-  font-size: 1.5rem;
+.video-hero__content p {
+  margin: 0.75rem 0 0;
+  color: inherit;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+/* =========================================================
+   MEDIA PROJECTS
+   Used for music, paintings, photography, and related work
+   ========================================================= */
+
+.media-project {
+  margin: 3rem 0 4rem;
+}
+
+.media-project__header {
+  margin-bottom: 1.5rem;
+}
+
+.media-project__header h2 {
+  margin-bottom: 0.35rem;
+}
+
+.media-project__header p {
+  max-width: 52rem;
+  margin-top: 0;
+}
+
+.media-project__description {
+    max-width: 50rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.page__content p.media-project__description {
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+/* Fixed-width grid keeps one-item and multi-item projects
+   at exactly the same thumbnail size. */
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 1.5rem;
+  align-items: start;
+  justify-content: start;
+}
+
+
+/* Individual album or artwork card */
+
+.media-card {
+  display: flex;
+  width: 240px;
+  min-width: 0;
+  margin: 0;
+  flex-direction: column;
+  align-self: start;
+}
+
+.media-card__image-link {
+  display: block;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  background: #111;
+  box-shadow: 0 0.25rem 0.9rem rgba(0, 0, 0, 0.2);
+}
+
+.media-card__image-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.media-card__image-link:hover img,
+.media-card__image-link:focus img {
+  transform: scale(1.04);
+  opacity: 0.88;
+}
+
+.media-card__image-link:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+
+/* Captions */
+
+.media-card__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: left;      /* horizontal centering */
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 4.5rem;
+    padding-top: 0.75rem;
+}
+
+.media-card__caption > * {
+    width: 100%;
+    margin: 0;
+}
+
+.media-card__title,
+.media-card__details,
+.media-card__description,
+.media-card__links {
+  display: block;
+}
+
+.media-card__title {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.media-card__details {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+.media-card__description {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  opacity: 0.8;
+}
+
+
+/* Music-service links */
+
+.media-card__links {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.media-card__links a {
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+
+/* =========================================================
+   FULL-SIZE LIGHTBOX
+   ========================================================= */
+
+.media-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-lightbox:target {
+  display: flex;
+}
+
+.media-lightbox__background {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.93);
+}
+
+.media-lightbox__content {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  max-width: min(92vw, 1500px);
+  max-height: 92vh;
+  margin: 0;
+  text-align: center;
+}
+
+.media-lightbox__content img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 0.25rem;
+}
+
+.media-lightbox__content figcaption {
+  margin-top: 0.75rem;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.media-lightbox__content figcaption span {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.media-lightbox__close {
+  position: absolute;
+  top: -2.75rem;
+  right: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.media-lightbox__close:hover,
+.media-lightbox__close:focus {
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE LAYOUT
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .media-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .media-card {
+    width: 100%;
+  }
+
+  .media-card__image-link {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .media-card__caption {
+    min-height: 4rem;
+    padding-top: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .media-card__links {
+    font-size: 0.72rem;
+  }
+
+  .media-lightbox {
+    padding: 1rem;
+  }
+
+  .media-lightbox__content img {
+    max-height: 76vh;
+  }
+}
+
+
+/* Disable image animation when reduced motion is requested */
+
+@media (prefers-reduced-motion: reduce) {
+  .media-card__image-link img {
+    transition: none;
+  }
+
+  .media-card__image-link:hover img,
+  .media-card__image-link:focus img {
+    transform: none;
+  }
+}
+
+.home-bio {
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.home-bio__photo img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+}
+
+.home-bio__text h1 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+}
+
+.home-bio__subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.home-bio__text p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.home-bio__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.home-bio__links a {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.home-bio__links a:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.page__hero--overlay {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 760px) {
+  .home-bio {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .home-bio__photo img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .home-bio__text {
+    text-align: center;
+  }
+
+  .home-bio__links {
+    justify-content: center;
+  }
+}
+
+
+.home-author-links {
+  display: block;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.home-author-links li {
+  display: block;
+  margin: 0 0 0.55rem;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.home-author-links li,
+.home-author-links a {
+  color: inherit;
+}
+
+.home-author-links a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.home-author-links a:hover {
+  text-decoration: underline;
+}
+
+.home-author-links i {
+  width: 1.5em;
+  margin-right: 0.45rem;
+  text-align: center;
+}
+
+.home-author-links span {
+  display: inline-block;
 }

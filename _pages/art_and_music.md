@@ -1,28 +1,18 @@
 ---
-title: "art and music"
-permalink: /art_and_music/
 layout: single
-
+title: "art & music"
+permalink: /art_and_music/
+author_profile: false
 ---
 
----
+# music
 
-## listen
+## projects
 
-- 🎵 Spotify
-- 🍎 Apple Music
-- 🎧 Bandcamp
-- ▶️ YouTube Music
-- ☁️ SoundCloud
+{% include music-projects.html %}
 
----
+# art
 
-## featured releases
+## paintings
 
-### album title
-
-![Album Cover](/assets/images/music/album1.jpg){: width="250"}
-
-A short description of the album.
-
-[Listen on Spotify](https://spotify.com/...)
+{% include painting-projects.html %}

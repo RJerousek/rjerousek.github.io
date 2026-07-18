@@ -1,0 +1,139 @@
+<div class="media-projects">
+
+  {% for project in site.data.music.projects %}
+    {% assign project_id = project.title | slugify %}
+
+    <section class="media-project" id="{{ project_id }}">
+
+      <header class="media-project__header">
+        <h2>{{ project.title }}</h2>
+
+        {% if project.description %}
+        <p class="media-project__description">{{ project.description | newline_to_br }}</p>
+        {% endif %}
+      </header>
+
+      <div class="media-grid">
+
+        {% for album in project.albums %}
+          {% assign album_id = project.title
+            | append: "-"
+            | append: album.title
+            | slugify
+          %}
+
+          <figure class="media-card">
+
+            <a
+              class="media-card__image-link"
+              href="#{{ album_id }}"
+              aria-label="View full-size cover for {{ album.title }}"
+            >
+              <img
+                src="{{ album.image | relative_url }}"
+                alt="{{ album.title }} album cover"
+                loading="lazy"
+              >
+            </a>
+
+            <figcaption class="media-card__caption">
+
+              <span class="media-card__title">
+                {{ album.title }}
+              </span>
+
+              {% if album.year %}
+                <span class="media-card__details">
+                  {{ album.year }}
+                </span>
+              {% endif %}
+
+              {% if album.spotify or album.apple or album.youtube or album.bandcamp %}
+                <span class="media-card__links">
+
+                  {% if album.spotify %}
+                    <a
+                      href="{{ album.spotify }}"
+                      target="_blank"
+                      rel="noopener"
+                    >Spotify</a>
+                  {% endif %}
+
+                  {% if album.apple %}
+                    <a
+                      href="{{ album.apple }}"
+                      target="_blank"
+                      rel="noopener"
+                    >Apple Music</a>
+                  {% endif %}
+
+                  {% if album.youtube %}
+                    <a
+                      href="{{ album.youtube }}"
+                      target="_blank"
+                      rel="noopener"
+                    >YouTube</a>
+                  {% endif %}
+
+                  {% if album.bandcamp %}
+                    <a
+                      href="{{ album.bandcamp }}"
+                      target="_blank"
+                      rel="noopener"
+                    >Bandcamp</a>
+                  {% endif %}
+
+                </span>
+              {% endif %}
+
+            </figcaption>
+
+          </figure>
+
+
+          <!-- Full-size lightbox -->
+
+          <div
+            id="{{ album_id }}"
+            class="media-lightbox"
+            role="dialog"
+            aria-modal="true"
+            aria-label="{{ album.title }}"
+          >
+            <a
+              href="#{{ project_id }}"
+              class="media-lightbox__background"
+              aria-label="Close image"
+            ></a>
+
+            <figure class="media-lightbox__content">
+
+              <a
+                href="#{{ project_id }}"
+                class="media-lightbox__close"
+                aria-label="Close image"
+              >&times;</a>
+
+              <img
+                src="{{ album.image | relative_url }}"
+                alt="{{ album.title }} album cover"
+              >
+
+              <figcaption>
+                {{ album.title }}
+                {% if album.year %}
+                  — {{ album.year }}
+                {% endif %}
+              </figcaption>
+
+            </figure>
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    </section>
+  {% endfor %}
+
+</div>

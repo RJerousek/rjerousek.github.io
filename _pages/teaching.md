@@ -2,10 +2,9 @@
 title: teaching
 permalink: /teaching/
 layout: single
+author_profile: true
 ---
-
-## courses:
-
+## courses
 - [ast 2002 – introductory astronomy](/teaching/ast2002/)
 - [ast 3110 – solar System astronomy](/teaching/ast3110/)
 - [ast 3402 – Galaxies and cosmology](/teaching/ast3402/)

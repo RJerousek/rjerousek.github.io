@@ -16,10 +16,12 @@ plugins:
 minimal_mistakes_skin: "default"
 
 author:
-  name: "Dr. Richard Jerousek"
+  name: "dr. richard jerousek"
   avatar: "/assets/images/profile_pic.png"
-  bio: "astrophysicist, composer, artist, garbageman, teacher, etc."
-  location: "Null Island"
+  bio: |
+    astrophysicist, composer, artist, garbageman, teacher, researcher, existing being
+
+  location: 
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

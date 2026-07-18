@@ -1,0 +1,59 @@
+projects:
+  - title: discovery of magnetic north
+    description: | 
+      experimental, electronic, lofi, haunt music
+      music by richard jerousek and brian philips
+    
+
+    albums:
+      - title: diving belle
+        year: 2007
+        image: "/assets/images/music/DivingBelleBack.jpg"
+
+        bandcamp: "https://discoveryofmagneticnorth.bandcamp.com/"
+        spotify: "https://open.spotify.com/artist/17pT5C3tVbnjLrog55ffXw"
+        apple: "https://music.apple.com/us/artist/discovery-of-magnetic-north/270748850"
+        youtube: "https://music.youtube.com/channel/UC-lnN2PtFNl_EYAVZsE_uVg"
+       
+
+      - title: sides
+        year: 2012
+        image: "/assets/images/music/sides_jcover.jpg"
+
+        bandcamp: "https://discoveryofmagneticnorth.bandcamp.com/"
+        spotify: "https://open.spotify.com/artist/17pT5C3tVbnjLrog55ffXw"
+        apple: "https://music.apple.com/us/artist/discovery-of-magnetic-north/270748850"
+        youtube: "https://music.youtube.com/channel/UC-lnN2PtFNl_EYAVZsE_uVg"
+
+  - title: monoceros
+    description: |
+      drone, doom, doomgaze 
+      music by richard jerousek, casey schwarz, mike downs, and brian philips
+
+    albums:
+      - title: petrichor
+        year: 2017
+        image: "/assets/images/music/petrichor.jpg"
+
+        bandcamp: "https://monoceros-doomgaze.bandcamp.com/album/petrichor"
+
+  - title: "fake music for fake people"
+    description: |
+      8-bit, glitch, idm 
+      richard jerousek, math, and interactive data language - IDL
+
+    albums:
+      - title: fake music for faek peop13_
+        year: 2018
+        image: "/assets/images/music/fake_music_4_fake_people.jpg"
+
+        bandcamp: "https://fakemusicforfakepeople.bandcamp.com/album/fake-music-for-fake-people"
+
+  - title: "richard jerousek solo works"
+    description: "this archive is under construction"
+
+    albums:
+      - title: ""
+        year: ""
+        image: ""
+
