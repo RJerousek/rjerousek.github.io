@@ -1,6 +1,6 @@
 ---
 title: "curriculum vitae"
-permalink: /CV/
+permalink: /cv/
 layout: single
 classes: wide
 author_profile: true
