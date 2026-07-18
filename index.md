@@ -5,13 +5,14 @@ permalink: /
 author_profile: false
 classes: wide
 ---
-
+<!--
 <div class="home-banner">
   <img
     src="{{ '/assets/images/home/banner.jpg' | relative_url }}"
     alt=""
   >
 </div>
+-->
 
 <div class="home-bio">
 
