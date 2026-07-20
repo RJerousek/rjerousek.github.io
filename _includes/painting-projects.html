@@ -6,27 +6,25 @@
     <section class="media-project" id="{{ project_id }}">
 
       <header class="media-project__header">
-        <!-- <h2>{{ project.title }}</h2> -->
 
         {% if project.description %}
-         <p class="media-project__description">{{ project.description | newline_to_br }}</p>
+          <p class="media-project__description">
+            {{ project.description | newline_to_br }}
+          </p>
         {% endif %}
+
       </header>
 
       <div class="media-grid">
 
         {% for work in project.works %}
-          {% assign work_id = project.title
-            | append: "-"
-            | append: work.title
-            | slugify
-          %}
 
           <figure class="media-card">
 
             <a
-              class="media-card__image-link"
-              href="#{{ work_id }}"
+              class="media-card__image-link image-popup"
+              href="{{ work.image | relative_url }}"
+              title="{% if work.caption %}{{ work.title }} — {{ work.caption }}{% else %}{{ work.title }}{% endif %}"
               aria-label="View full-size image of {{ work.title }}"
             >
               <img
@@ -52,51 +50,12 @@
 
           </figure>
 
-
-          <!-- Full-size lightbox -->
-
-          <div
-            id="{{ work_id }}"
-            class="media-lightbox"
-            role="dialog"
-            aria-modal="true"
-            aria-label="{{ work.title }}"
-          >
-            <a
-              href="#{{ project_id }}"
-              class="media-lightbox__background"
-              aria-label="Close image"
-            ></a>
-
-            <figure class="media-lightbox__content">
-
-              <a
-                href="#{{ project_id }}"
-                class="media-lightbox__close"
-                aria-label="Close image"
-              >&times;</a>
-
-              <img
-                src="{{ work.image | relative_url }}"
-                alt="{{ work.title }}"
-              >
-
-              <figcaption>
-                <strong>{{ work.title }}</strong>
-
-                {% if work.caption %}
-                  <span>{{ work.caption }}</span>
-                {% endif %}
-              </figcaption>
-
-            </figure>
-          </div>
-
         {% endfor %}
 
       </div>
 
     </section>
+
   {% endfor %}
 
 </div>
