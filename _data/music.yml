@@ -50,10 +50,15 @@ projects:
         bandcamp: "https://fakemusicforfakepeople.bandcamp.com/album/fake-music-for-fake-people"
 
   - title: "richard jerousek solo works"
-    description: "this archive is under construction"
+    description: "piano, ambient, idm, electronic, experimental"
 
     albums:
-      - title: ""
-        year: ""
-        image: ""
+      - title: "y2 okay"
+        year: "2000"
+        image: "/assets/images/music/me_at_20.jpg"
+        bandcamp: "https://richardjerousek.bandcamp.com/album/y2-okay"
+      - title: "μ sick"
+        year: "2006"
+        image: "/assets/images/music/me_at_23.jpg"
+        bandcamp: "https://richardjerousek.bandcamp.com/album/sick-2"
 

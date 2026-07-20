@@ -1,7 +1,7 @@
 ---
 title: "academic research"
 permalink: /research/
-author_profile: false
+author_profile: true
 ---
 
 ## topics
