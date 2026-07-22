@@ -4,8 +4,6 @@ permalink: /manifesto/
 layout: single
 ---
 
-This is still under construction...
-
 ### *The motivation ALWAYS was and is to cultivate a culture of kidness, trust, and free thought.*
 
 ## Preface
