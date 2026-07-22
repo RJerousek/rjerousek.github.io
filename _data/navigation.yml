@@ -1,18 +1,18 @@
 main:
-  - title: "Biography"
+  - title: "home"
     url: /
 
-  - title: "Research"
+  - title: "research"
     url: /research/
 
-  - title: "Teaching"
+  - title: "teaching"
     url: /teaching/
 
-  - title: "Art and Music"
+  - title: "art & music"
     url: /art_and_music/
 
-  - title: "CV"
+  - title: "cv"
     url: /cv/
 
-  - title: "Manifesto"
+  - title: "manifesto"
     url: /manifesto/
