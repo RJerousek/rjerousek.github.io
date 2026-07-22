@@ -22,7 +22,7 @@ Another great influence is Dr. Ehsan Emad Marvasti, who in the same home, brough
 
 By far my greatest influence, teacher and comrade since 2015 has been my dear dear wife Dr. Cicely Scheiner who has taught me so much about enjoyment, humanity, charity, teaching, learning, and fun to name a few. Sometimes by my side at Tiny table and Tarab, sometimes in her own trenches of research, when we come together in absolute sincerity the perspectives of countless others are transferred back and forth.
 
-Being the some of my influences, there are of course so many that I will fail to mention and I do apologize. I also want to note that I will certainly misinterpret the perspectives of others. It takes an infinite number of symbols or words to share the perspective of one with another.
+Being a direct product of my influences, there are of course so many that I will fail to mention and I apologize with all my heart. I also want to note that I have and will continue to misinterpret the brilliant perspectives of all of those, alive or long dead, with whom I've had the privilege of sharing a moment. It takes an infinite number of symbols or words to share the perspective of one with another.
 
 With all sincerity, below you will find mostly the incoherent ramblings of a fool though I hope that some of them, however foolish, find a home in your mind as an infinitesimal fraction of the beauty of coexistence.
 
